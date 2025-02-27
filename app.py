@@ -2,14 +2,13 @@ from flask import Flask
 
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
-    return 'Hello from Pet Adoption'
-
-
-@app.route('/adopt')
-def adopt():
-    return 'Would you like to adopt a pet?'
+    return '''
+        <h1>Pet Adoption</h1>
+        <button>Add Pet</button>
+    '''
 
 
 if __name__ == '__main__':
